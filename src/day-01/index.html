@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAy 1 - Semantic HTML</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>My Full-Stack Journey</h1>
+            <p>Semantic HTML Foundation</p>
+        </div>
+
+        <nav aria-label="Primarry Navigation">
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="layout">
+
+        <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>i am a final year software engineering student learing full-stack development step-by-step for professional job.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="card-grid">
+                <article>
+                    <h3>Project 1: Portfolio website</h3>
+                    <p>responsive personal portfolio to showcase my skills.</p>
+                </article>
+
+                <article>
+                    <h3>Project 2: Full-Stack CRUD App</h3>
+                    <p>A full-stack app with authentication, database, and deployment.</p>
+                </article>
+
+                <article>
+                    <h3>Project 1: Portfolio website</h3>
+                    <p>responsive personal portfolio to showcase my skills.</p>
+                </article>
+
+                <article>
+                    <h3>Project 2: Full-Stack CRUD App</h3>
+                    <p>A full-stack app with authentication, database, and deployment.</p>
+                </article>
+                
+            </div>
+           
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <form action="post">
+
+                <fieldset>
+                    <legend>Send  me a message</legend>
+                <label for="Name"> Name <Span aria-hidden="true">*</Span></label> <br>
+                <input type="text" id="name" autocomplete="name" required minlength="2" name="name" placeholder="name"> <br> <br>
+
+                <label for="Name"></label> <br>
+                <input type="email" id="email" name="email" placeholder="email"> <br> <br>
+
+                <label for="Message"></label> <br>
+                <textarea name="message" id="message" rows="5" placeholder="Type message..."></textarea>
+                
+
+                <div>
+                    <label for="topic">Topic</label>
+                    <select name="topic" id="">
+                        <option value="general">General</option>
+                        <option value="project">Project</option>
+                        <option value="internship" >Internship</option>
+                        <option value="others">options</option>
+                    </select>
+                </div>
+                <a href="#idjw"> click Me/a>
+                <br>
+
+                <div>
+                    <input type="checkbox" name="agree" id="" required/>
+                    <label for="agree">I confirm the information is correct</label>
+                </div>
+
+                <button type="submit">send</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Notes</h2>
+        <ul>
+            <li>Use semantic tags for better structure</li>
+            <li>Headings should follow order</li>
+            <li>Forms need labels</li>
+        </ul>
+    </aside>
+    </div>
+
+    <footer>
+        <small>© 2026 My Full-Stack Journey</small>
+    </footer>
+</body>
+</html>
